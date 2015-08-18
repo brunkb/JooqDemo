@@ -1,0 +1,16 @@
+apply plugin: 'idea'
+//and standard one
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.4',
+            'org.jooq:jooq:3.6.1',
+            'org.jooq:jooq-meta:3.6.1',
+            'org.jooq:jooq-codegen:3.6.1',
+            'mysql:mysql-connector-java:5.1.36'
+}
